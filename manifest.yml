@@ -1,0 +1,5 @@
+name: sails-hello-world 
+command: npm start
+env: 
+  NODE_ENV: sandbox
+  NPM_CONFIG_PRODUCTION: false

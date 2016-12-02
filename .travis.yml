@@ -1,3 +1,13 @@
 language: node_js
 node_js:
   - "6"
+deploy:
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: jgpuzzo@metrocast.net
+  password:
+    secure: SMtCkDo4kqOCiExnC5tP/hMbB8mdDqC1oIOIiR+8qXu0LTLCIjJHcyeteTK3PGnyBiwtZ0/YnrpFHK1N/mbTeSAYCQB8Q8WV+KT55l2qXBrqC/twGnPTu+ZOYLhJ1R8HJxzTHbRP8WlKA2SHEYEBGhfpy9klZV6op/H7tYGthriAd1uVzW3gazrPKtzdZ+H4cObsyTtlPYtxpdfy3HF6OzppSfhCc5IeZilrQk0C5rIGNyTKPuj9acTbYxAmrnxSer2NMW6l2md+WzVCKPQJRSyXgqJzVkb+aHajtPdMykX6YRGm22E8yt1ARtAWeZ1kLXlizJFLIEBVNMGBoxZ99JJq+cvvsHxK+vC3ULCIjmfOa9Qck9fDSFowMODxeIPgDvv5L2lRGqv5iHsNuGKAP0huP9OhXn7znbdRT3BhSbO+5Ik0vm8Cd2BuhQTcZ7Sk9vnYpXkzqKpKmrhhL8tFIFYIGs3e4+qv2AIPhcSL2SRTT9A2kOwnA34D19HvWYcSgN80EasLJjlxpe1D4vl4IMvNyk/+RpDEaGAy/nOtaWdS2k0RU82KDnJczBs3ZUfbC2MwJFjoE7rnhU8wc8wz9BrhtC+0n4WUtzYAo/gVI7gRMgmmOSfz0pj27bIfVaO1WBVIfD70ym1vcbFa8BB6HHcfQSly8v7YlL3QnVR4EIo=
+  organization: puzzo.sandbox
+  space: development
+  on:
+    repo: joepuzzo/sails-hello-world
